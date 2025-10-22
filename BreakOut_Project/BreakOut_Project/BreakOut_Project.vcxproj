@@ -122,7 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\BreakOut\Dependency\GLM;D:\BreakOut\Dependency\GLFW\include;D:\BreakOut\Dependency\GLAD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\BreakOut\Dependency\STBimage;D:\BreakOut\Dependency\GLM;D:\BreakOut\Dependency\GLFW\include;D:\BreakOut\Dependency\GLAD\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

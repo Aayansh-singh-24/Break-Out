@@ -3,6 +3,9 @@
 #include<glad/glad.h>
 #include<glfw3.h>
 #include"../Engine/Graphics/Shaders/Shader.h"
+#include"../Engine/Renderer/Sprite/sprite.h"
+#include"../Engine/Resource/ResourceManager.h"
+
 enum GameState
 {
 	GAME_ACTIVE,

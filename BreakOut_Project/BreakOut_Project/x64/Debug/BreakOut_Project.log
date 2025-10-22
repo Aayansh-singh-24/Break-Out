@@ -19,11 +19,4 @@ D:\BreakOut\Dependency\GLAD\include\glad\glad.h(592,9): warning C4005: 'GL_CLIEN
       C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GL\gl.h(973,9):
       see previous definition of 'GL_CLIENT_ALL_ATTRIB_BITS'
   
-  Resource.cpp
-  game.cpp
-  main.cpp
-D:\BreakOut\BreakOut_Project\BreakOut_Project\main.cpp(45,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-Resource.obj : error LNK2001: unresolved external symbol "public: static class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class Texture2D,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class Texture2D> > > ResourceManager::Textures" (?Textures@ResourceManager@@2V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VTexture2D@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VTexture2D@@@std@@@2@@std@@A)
-D:\BreakOut\BreakOut_Project\x64\Debug\BreakOut_Project.exe : fatal error LNK1120: 1 unresolved externals
+  BreakOut_Project.vcxproj -> D:\BreakOut\BreakOut_Project\x64\Debug\BreakOut_Project.exe

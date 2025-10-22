@@ -1,10 +1,12 @@
 #include"Game/Game.h"
-#include"Engine/Resource/ResourceManager.h"
+//#include"Engine/Resource/ResourceManager.h"
 
 const unsigned int WIDTH = 900;
 const unsigned int HEIGHT = 900;
 
 Game Breakout(WIDTH, HEIGHT);
+
+
 
 int main()
 {

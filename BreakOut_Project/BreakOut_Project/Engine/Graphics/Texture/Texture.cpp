@@ -16,7 +16,7 @@ void Texture2D::Generate(unsigned int width, unsigned int height, unsigned char*
 	this->Height = height;
 
 	glBindTexture(GL_TEXTURE_2D, this->ID);
-	glTexImage2D(GL_TEXTURE_2D, 0, this->nrChannels, width, height, 0, this->image_format, GL_UNSIGNED_BYTE, data);
+	glTexImage2D(GL_TEXTURE_2D, 0, this->image_format, width, height, 0, this->image_format, GL_UNSIGNED_BYTE, data);
 	glGenerateMipmap(GL_TEXTURE_2D);
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, this->wrap_s);

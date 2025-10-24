@@ -25,6 +25,8 @@
     <ClCompile Include="Game\game.cpp" />
     <ClCompile Include="Engine\Graphics\Shaders\Shader.cpp" />
     <ClCompile Include="Engine\Graphics\Texture\Texture.cpp" />
+    <ClCompile Include="Game\GameLevel.cpp" />
+    <ClCompile Include="Game\Game_object.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +35,8 @@
     <ClInclude Include="Game\Game.h" />
     <ClInclude Include="Engine\Graphics\Shaders\Shader.h" />
     <ClInclude Include="Engine\Graphics\Texture\Texture.h" />
+    <ClInclude Include="Game\GameLevel.h" />
+    <ClInclude Include="Game\Game_object.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Graphics\Shaders\Fragment.frag" />

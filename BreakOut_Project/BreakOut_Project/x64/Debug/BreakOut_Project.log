@@ -1,22 +1,2 @@
-﻿  sprite.cpp
-D:\BreakOut\Dependency\GLAD\include\glad\glad.h(326,9): warning C4005: 'GL_ALL_ATTRIB_BITS': macro redefinition
-  (compiling source file 'Engine/Renderer/Sprite/sprite.cpp')
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GL\gl.h(107,9):
-      see previous definition of 'GL_ALL_ATTRIB_BITS'
-  
-D:\BreakOut\Dependency\GLAD\include\glad\glad.h(414,9): warning C4005: 'GL_LOGIC_OP': macro redefinition
-  (compiling source file 'Engine/Renderer/Sprite/sprite.cpp')
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GL\gl.h(1152,9):
-      see previous definition of 'GL_LOGIC_OP'
-  
-D:\BreakOut\Dependency\GLAD\include\glad\glad.h(498,9): warning C4005: 'GL_TEXTURE_COMPONENTS': macro redefinition
-  (compiling source file 'Engine/Renderer/Sprite/sprite.cpp')
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GL\gl.h(1153,9):
-      see previous definition of 'GL_TEXTURE_COMPONENTS'
-  
-D:\BreakOut\Dependency\GLAD\include\glad\glad.h(592,9): warning C4005: 'GL_CLIENT_ALL_ATTRIB_BITS': macro redefinition
-  (compiling source file 'Engine/Renderer/Sprite/sprite.cpp')
-      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\GL\gl.h(973,9):
-      see previous definition of 'GL_CLIENT_ALL_ATTRIB_BITS'
-  
+﻿  Game_object.cpp
   BreakOut_Project.vcxproj -> D:\BreakOut\BreakOut_Project\x64\Debug\BreakOut_Project.exe

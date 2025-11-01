@@ -27,9 +27,9 @@ Shader ResourceManager::GetShader(std::string name)
     return Shaders[name];
 }
 
-Texture2D ResourceManager::LoadTexture(const char* file, bool alpha, std::string name)
+Texture2D ResourceManager::LoadTexture(const char* file, std::string name)
 {
-    Textures[name] = loadTextureFromFile(file, alpha);
+    Textures[name] = loadTextureFromFile(file);
     return Textures[name];
 }
 
@@ -83,7 +83,7 @@ Shader ResourceManager::loadShaderFromFile(const char* vShaderFile, const char* 
     return shader;
 }
 
-Texture2D ResourceManager::loadTextureFromFile(const char* file, bool alpha)
+Texture2D ResourceManager::loadTextureFromFile(const char* file)
 {
     Texture2D texture;
 
@@ -97,7 +97,15 @@ Texture2D ResourceManager::loadTextureFromFile(const char* file, bool alpha)
 
     // choose correct GL format based on loaded channels
 
-    texture.image_format = alpha ? GL_RGBA : GL_RGB;
+    // choose correct GL format based on number of channels
+    if (nrChannels == 1)
+        texture.image_format = GL_RED;
+    else if (nrChannels == 3)
+        texture.image_format = GL_RGB;
+    else if (nrChannels == 4)
+        texture.image_format = GL_RGBA;
+    else
+        texture.image_format = GL_RGB; // fallback
 
     // now generate texture (Texture2D::Generate expects image_format to be set)
     texture.Generate(width, height, data);

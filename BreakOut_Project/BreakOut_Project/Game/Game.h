@@ -5,6 +5,7 @@
 #include"../Engine/Graphics/Shaders/Shader.h"
 #include"../Engine/Renderer/Sprite/sprite.h"
 #include"../Engine/Resource/ResourceManager.h"
+#include"GameLevel.h"
 
 enum GameState
 {
@@ -20,6 +21,8 @@ public:
 	bool key[1024];
 	unsigned int Width, Height;
 
+	std::vector<GameLevel>Levels;
+	unsigned int level;
 	Game(const unsigned int width, const unsigned int height); // declaration the width and height of window.
 	//~Game(); // Destructor(free up memory by deleteing the object)
 

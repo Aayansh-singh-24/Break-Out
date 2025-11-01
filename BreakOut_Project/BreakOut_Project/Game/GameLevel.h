@@ -11,6 +11,7 @@
 
 class GameLevel
 {
+public:
 	std::vector<GameObject>Bricks; // Level State
 	GameLevel() {};
 	void Load(const char* file, unsigned int levelWidth, unsigned int levelHeight);

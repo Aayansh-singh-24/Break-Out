@@ -1,2 +1,3 @@
-﻿  Game_object.cpp
+﻿  main.cpp
+D:\BreakOut\BreakOut_Project\BreakOut_Project\main.cpp(68,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   BreakOut_Project.vcxproj -> D:\BreakOut\BreakOut_Project\x64\Debug\BreakOut_Project.exe

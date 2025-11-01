@@ -31,3 +31,13 @@ void GameObject::draw(SpriteRenderer& renderer)
 {
 	renderer.Render(this->Sprite, this->Position, this->Size, this->Rotation, this->Color);
 }
+
+glm::vec2 BallObject::Move(float dt, unsigned int window_width)
+{
+	this->Position = this->Velocity * dt;
+	if (this->Position.x <= 0.0f)
+	{
+		this->Velocity.x -= this->Velocity.x;
+		this->Position.x = 0.0f;
+	}
+}

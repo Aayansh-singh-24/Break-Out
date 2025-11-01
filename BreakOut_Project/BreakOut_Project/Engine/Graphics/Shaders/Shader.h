@@ -55,7 +55,7 @@ private:
 		}
 		else if (msg == "PROGRAM")
 		{
-			glGetShaderiv(object, GL_COMPILE_STATUS, &success);
+			glGetProgramiv(object, GL_LINK_STATUS, &success);
 			if (!success)
 			{
 				glGetShaderInfoLog(object, 1024, NULL, infoLog);

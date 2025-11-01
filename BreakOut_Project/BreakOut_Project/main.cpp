@@ -7,6 +7,25 @@ const unsigned int HEIGHT = 900;
 Game Breakout(WIDTH, HEIGHT);
 
 
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
+
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+
+    if (key >= 0 && key < 1024)
+    {
+        if (action == GLFW_PRESS)
+            Breakout.key[key] = GLFW_PRESS;
+        else if (action == GLFW_RELEASE)
+            Breakout.key[key] = GLFW_RELEASE;
+    }
+}
+
 
 int main()
 {
@@ -18,6 +37,8 @@ int main()
 
     GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "BreakOut", nullptr, nullptr);
     glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetKeyCallback(window, key_callback);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
@@ -48,7 +69,8 @@ int main()
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
-
+        glfwPollEvents();
+        
 
         //Manage User Input:
         Breakout.ProcessInput(deltaTime);
@@ -62,11 +84,12 @@ int main()
 
 
         //Render:
+
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         Breakout.Render();
 
-        glfwPollEvents();
+        
         glfwSwapBuffers(window);
     }
 

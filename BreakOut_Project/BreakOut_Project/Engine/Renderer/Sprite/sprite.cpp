@@ -42,7 +42,7 @@ void SpriteRenderer::Render(Texture2D texture, glm::vec2 position, glm::vec2 siz
     glm::mat4 model = glm::mat4(1.0f); //Create a model 
     model = glm::translate(model, glm::vec3(position, 0.0f)); // move to a paticular position
     model = glm::translate(model, glm::vec3(0.5 * size.x, 0.5 * size.y, 0.0f)); // change pivot from left corner to centre
-    model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f)); // rotate the sprite
+    model = glm::rotate(model, rotation, glm::vec3(0.0f, 0.0f, 1.0f)); // rotate the sprite
     model = glm::translate(model, glm::vec3(-0.5f * size.x, -0.5 * size.y, 0.0f)); // undo the position of pivot
     model = glm::scale(model, glm::vec3(size, 1.0f));
 

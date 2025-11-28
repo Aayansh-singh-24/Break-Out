@@ -82,7 +82,7 @@ void GameLevel::Init(std::vector<std::vector<unsigned int>>tileData, unsigned in
                 glm::vec2 velocity = glm::vec2(0.0f, 0.0f);
                 Texture2D sprite = ResourceManager::GetTexture("block");
                 GameObject obj(sprite, position, size, color, velocity);
-                obj.IsSolid = true;
+                obj.IsSolid = false;
                 this->Bricks.push_back(obj);
             }
         }

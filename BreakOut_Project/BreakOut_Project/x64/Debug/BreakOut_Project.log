@@ -1,3 +1,8 @@
-﻿  main.cpp
-D:\BreakOut\BreakOut_Project\BreakOut_Project\main.cpp(68,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+﻿  GameLevel.cpp
+D:\BreakOut\BreakOut_Project\BreakOut_Project\Game\GameLevel.cpp(45,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\BreakOut\BreakOut_Project\BreakOut_Project\Game\GameLevel.cpp(46,25): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\BreakOut\BreakOut_Project\BreakOut_Project\Game\GameLevel.cpp(48,25): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+D:\BreakOut\BreakOut_Project\BreakOut_Project\Game\GameLevel.cpp(49,30): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+D:\BreakOut\BreakOut_Project\BreakOut_Project\Game\GameLevel.cpp(51,23): warning C4018: '<': signed/unsigned mismatch
+D:\BreakOut\BreakOut_Project\BreakOut_Project\Game\GameLevel.cpp(53,27): warning C4018: '<': signed/unsigned mismatch
   BreakOut_Project.vcxproj -> D:\BreakOut\BreakOut_Project\x64\Debug\BreakOut_Project.exe

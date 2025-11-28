@@ -28,6 +28,8 @@ public:
 
 	//Initialize GameState (load Texture , levels):-
 	void Init();
+
+	void doCollision();
 	//game loop
 	void ProcessInput(float deltatime);
 	void Update(float deltatime);

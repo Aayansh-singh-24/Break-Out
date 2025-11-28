@@ -25,11 +25,12 @@ public:
 
 class BallObject : public GameObject
 {
+public:
 	float Radius;
 	bool Stuck;
 
 	BallObject();
 	BallObject(Texture2D sprite, glm::vec2 Position, float radius, glm::vec2 veloocity);
 
-	glm::vec2 Move(float dt, unsigned int window_width);
+	glm::vec2 Move(float dt, unsigned int window_widt0h);
 };
